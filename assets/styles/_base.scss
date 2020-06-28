@@ -74,9 +74,10 @@ a {
 
 .time {
   font-size: 0.8rem;
+  width: 21rem;
 
   & > div {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 }

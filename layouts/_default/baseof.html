@@ -9,8 +9,10 @@
         {{ .Title }} | {{ .Site.Title }}
       {{ end }}
     </title>
-    {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+    {{ $style := resources.Get "styles/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ $syntaxStyle := resources.Get "styles/syntax.css" }}
+    <link rel="stylesheet" href="{{ $syntaxStyle.Permalink }}">
   </head>
   <body>
   <div class="container">
