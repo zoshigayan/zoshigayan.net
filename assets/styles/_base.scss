@@ -3,6 +3,10 @@ $c_base: #ccc;
 
 html {
   font-size: 120%;
+
+  @media screen and (max-width: 600px) {
+    font-size: 100%;
+  }
 }
 
 body {
@@ -84,6 +88,10 @@ ul {
 
   ul {
     list-style-type: none
+  }
+
+  @media screen and (max-width: 600px) {
+    display: none;
   }
 }
 
