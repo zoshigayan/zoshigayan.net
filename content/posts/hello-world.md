@@ -14,7 +14,7 @@ tags: ["ポエム"]
 
 以下を確認します。
 
-* パラグラフが正しく識別されている
+* パラグラフ [^paragraph] が正しく識別されている
 * headingが適切である
 * シンタックスハイライトが適用されている
 
@@ -22,31 +22,17 @@ tags: ["ポエム"]
 
 効いてほしい
 
-```typescript
+```typescript:hoge.ts
 const hoge = (args: HogeArgs): HogeResult => {
   const fuga: IFuga = new Fuga(args.fuga);
   return fuga.getHogeResult();
 };
 ```
 
-## これからやること
-
-* 直近
-  * [x] 本番環境だけTOCが崩れるのを直す
-  * [x] トップページちゃんと作る
-  * [ ] スマホで見られるようにする
-  * [x] もう少しちゃんとした見た目にする
-  * [ ] Twitterのリンクとか載せる
-  * [ ] 記事を書く
-  * [ ] 記事を書く
-  * [ ] 記事を書く
-  * [ ] 記事を書く
-* ゆくゆく
-  * [ ] ページネーション処理を入れる
-  * [ ] タグとかで検索できたい
-  * [ ] ダークモードしたい
-  * [ ] PJAX実装したい
-
 ### h3だぞ
 
-ちゃんとTOCに反映されるかどうか
+ちゃんと `TOC` [^TOC] に反映されるかどうかの確認です
+
+
+[^paragraph]: 段落のこと。
+[^TOC]: Table Of Contentsの略。

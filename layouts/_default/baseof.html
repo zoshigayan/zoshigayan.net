@@ -21,10 +21,34 @@
       {{- else -}}
         {{- print .Title " | " .Site.Title -}}
       {{- end -}}
-      " />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:image" content="{{ "/ogp.png" | absURL }}" />
+      ">
+    <meta property="og:type" content="video.movie">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <meta property="og:image" content="{{ "/ogp.png" | absURL }}">
+    <meta property="og:description" content="
+     {{- if .IsHome -}}
+        {{ "Web系エンジニアが日々の学びを雑に発信するWebサイトです" }}
+      {{- else -}}
+        {{- .Description -}}
+      {{- end -}}
+    ">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@zoshigayan">
+    <meta name="twitter:creator" content="@zoshigayan">
+    <meta name="twitter:title" content="
+     {{- if .IsHome -}}
+        {{- .Site.Title -}}
+      {{- else -}}
+        {{- print .Title " | " .Site.Title -}}
+      {{- end -}}
+    ">
+    <meta name="twitter:description" content="
+     {{- if .IsHome -}}
+        {{ "Web系エンジニアが日々の学びを雑に発信するWebサイトです" }}
+      {{- else -}}
+        {{- .Description -}}
+      {{- end -}}
+    ">
   </head>
   <body>
   <div class="container">
