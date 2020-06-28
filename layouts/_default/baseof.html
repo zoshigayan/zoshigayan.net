@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
     <title>
       {{ if .IsHome }}
         {{ .Site.Title }}
       {{ else }}
-        {{ .Title }} | {{ .Site.Title }}
+        {{ print .Title " | " .Site.Title }}
       {{ end }}
     </title>
     {{ $style := resources.Get "styles/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ $syntaxStyle := resources.Get "styles/syntax.css" }}
     <link rel="stylesheet" href="{{ $syntaxStyle.Permalink }}">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="
+     {{- if .IsHome -}}
+        {{- .Site.Title -}}
+      {{- else -}}
+        {{- print .Title " | " .Site.Title -}}
+      {{- end -}}
+      " />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:image" content="{{ "/ogp.png" | absURL }}" />
   </head>
   <body>
   <div class="container">
 
     <header class="header">
-      <a href="{{ .Site.Home.Permalink }}" class="logo">
-        {{ .Site.Title }}
-      </a>
+      {{ partial "logo.html" . }}
     </header>
 
     <main class="main">
@@ -35,7 +45,7 @@
     {{ end }}
 
     <footer class="footer">
-      {{ .Site.Copyright }}
+      <p class="credit">{{ .Site.Copyright }}</p>
     </footer>
   </div>
   </body>

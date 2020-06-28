@@ -1,15 +1,15 @@
 {{ define "main" }}
 <h1 class="visually-hidden">{{ .Site.Title }}</h1>
 
-<ul>
+<ul class="postlist">
 {{ range .Site.RegularPages }}
-<li>
-  <article>
-    <a href={{ .Permalink }}>
-    {{ .Title }}
-    </a>
-  </article>
-</li>
+  <li>
+    <article>
+      <a href={{ .Permalink }}>
+        {{ .Title }}
+      </a>
+    </article>
+  </li>
 {{ end }}
 </ul>
 

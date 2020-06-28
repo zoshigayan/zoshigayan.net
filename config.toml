@@ -8,6 +8,7 @@ languageCode = "ja-JP"
 paginate = 30
 title = "雑司ヶ谷インターネット"
 copyright = "2020 (C) zoshigayan"
+googleAnalytics = "UA-171113618-1"
 [permalinks]
 posts = "/:filename"
 [markup]
@@ -19,7 +20,7 @@ posts = "/:filename"
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "github"
+    style = "api"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3
