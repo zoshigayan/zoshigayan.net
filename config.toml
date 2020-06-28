@@ -1,0 +1,11 @@
+# https://gohugo.io/getting-started/configuration/
+baseURL = "https://zoshigayan.net"
+defaultContentLanguage = "ja"
+enableGitInfo = true
+enableRobotsTXT = true
+hasCJKLanguage = true
+languageCode = "ja-JP"
+paginate = 30
+[permalinks]
+  posts = "/:title"
+title = "雑司ヶ谷インターネット"
