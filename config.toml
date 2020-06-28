@@ -6,6 +6,22 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 languageCode = "ja-JP"
 paginate = 30
-[permalinks]
-  posts = "/:title"
 title = "雑司ヶ谷インターネット"
+copyright = "2020 (C) zoshigayan"
+[permalinks]
+posts = "/:filename"
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2

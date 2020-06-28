@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1 class="visually-hidden">{{ .Site.Title }}</h1>
+
+<ul>
+{{ range .Site.RegularPages }}
+<li>
+  <article>
+    <a href={{ .Permalink }}>
+    {{ .Title }}
+    </a>
+  </article>
+</li>
+{{ end }}
+</ul>
+
+{{ end }}

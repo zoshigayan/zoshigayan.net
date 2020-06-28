@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{ if .IsHome }}
+        {{ .Site.Title }}
+      {{ else }}
+        {{ .Title }} | {{ .Site.Title }}
+      {{ end }}
+    </title>
+    {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+  </head>
+  <body>
+  <div class="container">
+
+    <header class="header">
+      <a href="{{ .Site.Home.Permalink }}" class="logo">
+        {{ .Site.Title }}
+      </a>
+    </header>
+
+    <main class="main">
+    {{ block "main" . }}
+    {{ end }}
+    </main>
+
+    {{ if .TableOfContents }}
+      <aside class="aside" aria-label="目次">
+        {{ .TableOfContents }}
+      </aside>
+    {{ end }}
+
+    <footer class="footer">
+      {{ .Site.Copyright }}
+    </footer>
+  </div>
+  </body>
+</html>
