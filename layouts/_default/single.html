@@ -1,6 +1,12 @@
 {{ define "main" }}
 <article class="article">
   <h1 class="title">{{ .Title }}</h1>
+  {{ if .TableOfContents }}
+    <div class="toc">
+      <h2>目次</h2>
+      {{ .TableOfContents }}
+    </div>
+  {{ end }}
   <dl class="time">
     <div>
       <dt>公開日時</dt>

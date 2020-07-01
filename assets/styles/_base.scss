@@ -1,5 +1,6 @@
 $c_primary: #2e8adb;
 $c_base: #ccc;
+$w_article: 32rem;
 
 html {
   font-size: 120%;
@@ -80,20 +81,6 @@ ul {
   padding: 1rem;
 }
 
-.aside {
-  position: fixed;
-  top: 3rem;
-  right: 1rem;
-  width: 300px;
-
-  ul {
-    list-style-type: none
-  }
-
-  @media screen and (max-width: 600px) {
-    display: none;
-  }
-}
 
 .footer {
   padding: 1rem;
@@ -149,7 +136,7 @@ ul {
 .article {
   // なんか書こうとしたけど忘れた
   width: 100%;
-  max-width: 40rem;
+  max-width: $w_article;
 
   h2:not(:first-child) {
     margin-top: 5rem;
@@ -169,5 +156,18 @@ ul {
 
   & > div {
     display: flex;
+  }
+}
+
+.toc {
+  @media screen and (min-width: calc(#{$w_article} + 601px)) {
+    position: fixed;
+    top: 3rem;
+    right: 1rem;
+    width: 300px;
+
+    ul {
+      list-style-type: none
+    }
   }
 }
