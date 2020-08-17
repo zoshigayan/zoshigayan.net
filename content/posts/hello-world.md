@@ -2,7 +2,7 @@
 title: "ハローワールド"
 date: 2020-06-28T18:37:57+09:00
 description: "最初の投稿というか、デバッグ用のアレです"
-draft: false
+draft: true
 keywords: []
 tags: ["ポエム"]
 ---
