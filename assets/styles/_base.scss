@@ -138,36 +138,36 @@ ul {
   width: 100%;
   max-width: $w_article;
 
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__time {
+    font-size: 0.8rem;
+
+    dt {
+      width: 5rem;
+    }
+
+    & > div {
+      display: flex;
+    }
+  }
+}
+
+
+.article-body {
+  margin-top: 3rem;
+
   h2:not(:first-child) {
     margin-top: 5rem;
   }
-}
 
-.title {
-  font-size: 3rem;
-}
-
-.time {
-  font-size: 0.8rem;
-
-  dt {
-    width: 5rem;
+  p {
+    line-height: 1.7;
   }
 
-  & > div {
-    display: flex;
-  }
-}
-
-.toc {
-  @media screen and (min-width: calc(#{$w_article} + 601px)) {
-    position: fixed;
-    top: 3rem;
-    right: 1rem;
-    width: 300px;
-
-    ul {
-      list-style-type: none
-    }
+  a {
+    text-decoration: underline;
   }
 }
