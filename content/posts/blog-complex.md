@@ -1,9 +1,8 @@
 ---
-title: "ブログ書いてる人コンプレックスがすごい"
+title: "ブログ書きコンプレックス"
 date: 2020-08-18T07:04:10+09:00
-description: ""
+description: "なーんかもう全然書く気しないわけ。"
 draft: false
-keywords: []
 tags: ["ポエム"]
 ---
 
