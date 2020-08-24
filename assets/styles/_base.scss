@@ -17,6 +17,7 @@ body {
   background-color: #000;
   color: #ccc;
   overflow-y: scroll;
+  overflow-wrap: break-word;
 }
 
 *,
@@ -80,7 +81,6 @@ ul {
   margin: 0 auto;
   padding: 1rem;
 }
-
 
 .footer {
   padding: 1rem;
@@ -154,7 +154,6 @@ ul {
     }
   }
 }
-
 
 .article-body {
   margin-top: 3rem;
