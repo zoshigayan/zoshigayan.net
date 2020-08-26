@@ -1,6 +1,6 @@
 $c_primary: #2e8adb;
 $c_base: #ccc;
-$w_article: 32rem;
+$w_article: 40rem;
 
 html {
   font-size: 120%;
@@ -77,7 +77,7 @@ ul {
 .main {
   flex: 1;
   width: 100%;
-  max-width: 40rem;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -164,9 +164,31 @@ ul {
 
   p {
     line-height: 1.7;
+
+    & + p {
+      margin-top: 2rem;
+    }
   }
 
   a {
     text-decoration: underline;
+  }
+
+  ul,
+  ol {
+    margin: 2rem 0 4rem;
+  }
+
+  pre {
+    overflow-x: scroll;
+    margin: 2rem 0 4rem;
+  }
+
+  iframe {
+    margin: 2rem 0 4rem;
+  }
+
+  .footnotes {
+    margin-top: 5rem;
   }
 }
