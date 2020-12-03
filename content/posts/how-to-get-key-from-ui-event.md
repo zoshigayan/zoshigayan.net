@@ -2,9 +2,9 @@
 title: "結局 JavaScriptで「押されたキー」はどう取得するのがよいのか"
 date: 2020-08-27T04:00:09+09:00
 description: "e.keyCodeをなんとなく使ってきた人生だった"
-draft: true
+draft: false
 keywords: []
-tags: []
+tags: ["javascript", "frontend"]
 ---
 
 ## 背景
@@ -39,7 +39,7 @@ interface KeyboardEvent<T = Element> extends SyntheticEvent<T, NativeKeyboardEve
 
 このコードを見る限りだと、キーボードイベントに対して `e.charCode` とか `e.keyCode` という形でキーを取得する方法は非推奨ということになるが、僕は正直このへんの実装に対してあまり思い入れがない。 `keyCode` は使ったことある気がするけど、何で使っていたのかと言われるとよくわからない。社内でも「好みが色々あるよね～」みたいなフワッとした感じになっている気がする。
 
-しかし deprecated となれば問題である。うっかり手を出せば「えーあの人フロントエンド詳しそうに見えたけど deprecated API 使っちゃうんだーププッ」みたいなことを private channel で言われるリスクがある。そうなれば生きていけない。JavaScript は人の命を奪うこともあるのだ。
+しかし deprecated となれば問題である。うっかり手を出せば「えーあの人フロントエンド詳しそうに見えたけど deprecated API 使っちゃうんだーププッ」みたいなことを private channel で言われるリスクがある。そうなれば生きていけない。JavaScript は人の命を奪うこともある。
 
 果たして2020年現在、石を投げられたり笑われたりしない方法は何なのだろうか。それを探るため、取材班はネットサーフィンをした。
 
@@ -47,7 +47,7 @@ interface KeyboardEvent<T = Element> extends SyntheticEvent<T, NativeKeyboardEve
 
 まずは @types/react が `charCode` と `keyCode` を非推奨とした理由についてである。
 
-W3C の Working Draft に UI Events をまとめた頁があり、そこで奴らは **Legacy Key & Mouse Event Attributes** に分類されている。[^1] なんということか。 好みどころではない。そもそも仕様レベルでレガシーな存在だったのだ…。
+W3C の Working Draft に UI Events をまとめた頁があり、そこで奴らは **Legacy Key & Mouse Event Attributes** に分類されている。[^1] なんということか。 好みどころではない。そもそも仕様レベルでレガシーな存在だったのだ。
 
 詳しい話は原文を読んでもらうとして、ざっくりと要約すると、以下のような感じである。
 
@@ -126,14 +126,14 @@ eventTarget.addEventListener("keydown", event => {
 ```
 
 <p style="margin-top:10rem;">
-普通に <code>keyCode</code> 使ってきたーッ
+いや <code>keyCode</code> 使うのかよ　ズコー
 </P>
 
 ## 結論
 
 * `keyCode` は圧倒的非推奨なので基本的に `key` を使う
 * でも IME と組み合わせて `Enter` キーの入力を判別したいときは `keyCode` 使うのがよい
-* もっと良い方法知ってる人いたら教えてください
+* もっと良い方法知ってる人いたら教えてほしい
 
 [^1]: https://www.w3.org/TR/uievents/#legacy-key-attributes
 [^2]: https://www.w3.org/TR/uievents-key/#named-key-attribute-values
