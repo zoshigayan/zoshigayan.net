@@ -11,6 +11,13 @@
         {{ print .Title " | " .Site.Title }}
       {{ end }}
     </title>
+    <meta name="description" content="
+     {{- if .IsHome -}}
+        {{ .Site.Params.description }}
+      {{- else -}}
+        {{- .Description -}}
+      {{- end -}}
+    ">
     {{ $style := resources.Get "styles/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ $syntaxStyle := resources.Get "styles/syntax.css" }}
@@ -31,7 +38,7 @@
     <meta property="og:image:height" content="630">
     <meta property="og:description" content="
      {{- if .IsHome -}}
-        {{ "Web系エンジニアが日々の学びを雑に発信するWebサイトです" }}
+        {{ .Site.Params.description }}
       {{- else -}}
         {{- .Description -}}
       {{- end -}}
@@ -48,7 +55,7 @@
     ">
     <meta name="twitter:description" content="
      {{- if .IsHome -}}
-        {{ "Web系エンジニアが日々の学びを雑に発信するWebサイトです" }}
+        {{ .Site.Params.description }}
       {{- else -}}
         {{- .Description -}}
       {{- end -}}
