@@ -1,12 +1,11 @@
 $c_primary: #2e8adb;
 $c_base: #ccc;
-$w_article: 40rem;
 
 html {
-  font-size: 120%;
+  font-size: 150%;
 
   @media screen and (max-width: 600px) {
-    font-size: 100%;
+    font-size: 120%;
   }
 }
 
@@ -136,10 +135,9 @@ ul {
 .article {
   // なんか書こうとしたけど忘れた
   width: 100%;
-  max-width: $w_article;
 
   &__title {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   &__time {
