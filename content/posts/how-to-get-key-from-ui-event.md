@@ -3,7 +3,6 @@ title: "結局 JavaScriptで「押されたキー」はどう取得するのが�
 date: 2020-08-27T04:00:09+09:00
 description: "e.keyCodeをなんとなく使ってきた人生だった"
 draft: false
-keywords: []
 tags: ["javascript", "frontend"]
 ---
 
