@@ -86,6 +86,10 @@ ul {
   margin-top: 8rem;
 }
 
+.about-link {
+  text-align: center;
+}
+
 .credit {
   text-align: center;
 }
@@ -172,8 +176,8 @@ ul {
     text-decoration: underline;
   }
 
-  ul,
-  ol {
+  & > ul,
+  & > ol {
     margin: 2rem 0 4rem;
   }
 

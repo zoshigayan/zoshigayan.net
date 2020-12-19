@@ -67,8 +67,25 @@
     </main>
 
     <footer class="footer">
+      <p class="about-link"><a href="/about">雑司ヶ谷について</a></p>
       <p class="credit">{{ .Site.Copyright }}</p>
     </footer>
   </div>
   </body>
+  <script type="application/javascript">
+    window.onload = function() {
+      (function() {
+        const ageElement = document.getElementById("age");
+        if (!ageElement) return;
+
+        const birthday = new Date(1994, 9, 28);
+        function calcAge() {
+          const now = new Date();
+          const age = (now - birthday) / 31557600000;
+          ageElement.innerText = age.toFixed(8);
+        }
+        window.setInterval(calcAge, 10);
+      })();
+    };
+  </script>
 </html>
