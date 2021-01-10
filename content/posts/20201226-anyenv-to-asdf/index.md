@@ -2,7 +2,7 @@
 title: "anyenv から asdf に乗り換える"
 slug: "anyenv-to-asdf"
 date: 2020-12-26T15:18:55+09:00
-description: ""
+description: "バージョン管理をきちんとするのよ"
 draft: false
 series: "ターミナル環境大掃除2021"
 tags: ["作業ログ", "shell"]

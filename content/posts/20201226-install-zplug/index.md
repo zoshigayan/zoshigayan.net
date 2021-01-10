@@ -2,7 +2,7 @@
 title: "zplugを導入する"
 slug: "install-zplug"
 date: 2020-12-26T15:11:00+09:00
-description: ""
+description: "「今更」って思ったら負けなんだなって"
 draft: false
 series: "ターミナル環境大掃除2021"
 tags: ["作業ログ", "shell"]

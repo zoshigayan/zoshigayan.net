@@ -2,7 +2,7 @@
 title: "pecoからfzfに乗り換える"
 slug: "peco-to-fzf"
 date: 2020-12-26T15:18:57+09:00
-description: ""
+description: "ターミナル環境のアキレス腱、fuzzy matcher"
 draft: false
 series: "ターミナル環境大掃除2021"
 tags: ["作業ログ", "shell"]

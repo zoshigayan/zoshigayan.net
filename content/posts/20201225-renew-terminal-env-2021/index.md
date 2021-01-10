@@ -2,7 +2,7 @@
 title: "ターミナル環境大掃除2021"
 slug: "renew-terminal-env-2021"
 date: 2020-12-25T23:53:27+09:00
-description: ""
+description: "模様替えの計画だけを組み上げて熟睡する、そんな日があってもいい"
 draft: false
 series: "ターミナル環境大掃除2021"
 tags: ["作業ログ", "shell", "vim"]
