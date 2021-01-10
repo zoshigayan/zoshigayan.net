@@ -10,7 +10,13 @@ tags: ["作業ログ", "shell"]
 
 これは [ターミナル環境大掃除2021](/renew-terminal-env-2021) の4発目です。
 
+前回は [pecoからfzfに乗り換える](/peco-to-fzf) です。
+
 ## 動機
+
+* 速い
+  * [README](https://github.com/BurntSushi/ripgrep/blob/a6d05475fb353c756e88f605fd5366a67943e591/README.md#quick-examples-comparing-tools) にも書いてあるけど、ベンチマーク見る限りエグいぐらい速い
+  * 正直 grep にそこまで不満があるわけでもないが、そこまで言われると体感してみたい
 
 ## 作業
 
@@ -40,7 +46,11 @@ fzgrep() {
 
 基本的にコピペだけど、 `bat` はとりあえずいいやと思ったので `cat` で代用している。シンタックスハイライトが欲しくなったら考えよう。
 
-Vim と連携していく。
+{{< video src="fzgrep.mp4" >}}
+
+爆速である。一切インデックスを使わずファイルを全文検索してこの速度がでるのか。すげー。
+
+さっそく Vim と連携していく。init.vim に以下を追記した。
 
 ```
 " :grep で ripgrep つかうやつ
@@ -50,7 +60,11 @@ if executable("rg")
 endif
 ```
 
-これで Vim 内部から `:grep [pattern]` で ripgrep を利用したファイル検索を行うことができるようになった。爆速である。ヤッピー
+これで Vim 内部から `:grep [pattern]` で ripgrep を利用したファイル検索を行うことができるようになる。
+
+{{< video src="ripgrep-vim.mp4" >}}
+
+爆速である。はやすぎワロタである。これで記憶力に頼ることなく気軽に全文検索をかけまくって作業ができるようになった。ヨシ！
 
 * ~~zplug を導入する~~
 * ~~anyenv から asdf に乗り換える~~
@@ -68,3 +82,7 @@ endif
 * Zsh 初期設定を理解する
 * GitHub CLI を導入する
 * 補完について思いを馳せる
+
+## 続く
+
+次回、 [ghqディレクトリを移動するキーバインドを設定する](/move-ghq-directories-keybind)！

@@ -10,7 +10,14 @@ tags: ["作業ログ", "shell"]
 
 これは [ターミナル環境大掃除2021](/renew-terminal-env-2021) の3発目です。
 
+前回は [anyenvからasdfに乗り換える](/anyenv-to-asdf) です。
+
 ## 動機
+
+* 公式で Vim に対応している
+  * 「対応している」という言い方が正しいかは分からないが、そもそもが実行ファイルと Vim Plugin のセットみたいな状態で配布されている
+* カスタマイズ項目が多い
+  * 自分が思っていたより fuzzy matcher をよく使う人間であるということが分かったので、peco より自由度が高い fzf へ移行していく
 
 ## 作業
 
@@ -61,6 +68,8 @@ bindkey "^R" incremental_search_history
 
 これで `ctrl` + `r` で history に対して fzf によるファジー検索をして、選択した履歴をバッファに呼び出す…というのができるようになった。便利！
 
+{{< video src="fzf-history.mp4" >}}
+
 peco をアンインストールしてターンエンドである。
 
 * ~~zplug を導入する~~
@@ -79,3 +88,7 @@ peco をアンインストールしてターンエンドである。
 * Zsh 初期設定を理解する
 * GitHub CLI を導入する
 * 補完について思いを馳せる
+
+## 続く
+
+次回、[ripgrepを導入する](/install-ripgrep)！

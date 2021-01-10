@@ -10,11 +10,16 @@ tags: ["作業ログ", "shell"]
 
 これは [ターミナル環境大掃除2021](/renew-terminal-env-2021) の2発目です。
 
+前回は [zplugを導入する](/install-zplug) でした。
+
 ## 動機
 
-## 作業
+* Global のバージョンが `.tool-version` として静的に吐き出せるらしいよ
+  * けっこう書き捨てのスクリプトとか REPL とか使うので、地味に嬉しい
+* init と shim への PATH 構築がシングルスクリプトで終わる
+  * anyenv みたいに envs ディレクトリ以下でループ回したりしなくていい
 
-Global のバージョンが静的に吐き出せるというのは割と魅力である。会社の強い人も乗り換えたって言ってた。やっていこう。
+## 作業
 
 [asdf のリポジトリ](https://github.com/asdf-vm/asdf) を見てみると、なんと GitHub Releases を使って実行ファイルを配布している。つまり、zplug チャンスである。
 
@@ -175,3 +180,7 @@ export ASDF_CONFIG_FILE=~/dotfiles/asdf/.asdfrc
 * Zsh 初期設定を理解する
 * GitHub CLI を導入する
 * 補完について思いを馳せる
+
+## 続く
+
+次回、 [pecoからfzfに乗り換える](/peco-to-fzf)！
