@@ -1,5 +1,6 @@
 ---
 title: "フロントエンドと素朴なコードベース"
+slug: "soboku-solution"
 date: 2020-12-05T18:14:56+09:00
 description: "メンテナビリティはかっこよくない"
 draft: false

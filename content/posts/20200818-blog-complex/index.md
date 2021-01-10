@@ -1,5 +1,6 @@
 ---
 title: "ブログ書きコンプレックス"
+slug: "blog-complex"
 date: 2020-08-18T07:04:10+09:00
 description: "なーんかもう全然書く気しないわけ。"
 draft: false

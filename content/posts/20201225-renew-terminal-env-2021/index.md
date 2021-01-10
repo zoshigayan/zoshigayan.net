@@ -1,6 +1,7 @@
 ---
 title: "ターミナル環境大掃除2021"
-date: 2021-01-10T14:53:27+09:00
+slug: "renew-terminal-env-2021"
+date: 2020-12-25T23:53:27+09:00
 description: ""
 draft: false
 series: "ターミナル環境大掃除2021"

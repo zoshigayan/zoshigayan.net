@@ -12,7 +12,7 @@ googleAnalytics = "UA-171113618-1"
 [params]
 description = "インターネットは、あるんだよ"
 [permalinks]
-posts = "/:filename"
+posts = "/:slug"
 [markup]
   [markup.highlight]
     codeFences = true

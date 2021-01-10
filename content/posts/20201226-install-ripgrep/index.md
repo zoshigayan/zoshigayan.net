@@ -1,13 +1,14 @@
 ---
 title: "ripgrepを導入する"
-date: 2021-01-10T15:19:00+09:00
+slug: "install-ripgrep"
+date: 2020-12-26T15:19:00+09:00
 description: ""
 draft: false
 series: "ターミナル環境大掃除2021"
 tags: ["作業ログ", "shell"]
 ---
 
-これは [ターミナル環境大掃除2021]({{< ref "posts/terminals-renew-2021" >}}) の4発目です。
+これは [ターミナル環境大掃除2021](/renew-terminal-env-2021) の4発目です。
 
 ## 動機
 
