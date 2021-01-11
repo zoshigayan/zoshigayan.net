@@ -59,4 +59,4 @@ reverse した方が見やすそうとか、全画面乗っ取る必要ないん
 
 ## 続く
 
-気が向いたら続く
+次回、[Dein から vim-plug に乗り換える](/install-vim-plug)！
