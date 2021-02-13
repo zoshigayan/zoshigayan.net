@@ -146,7 +146,7 @@ nnoremap <silent> <Leader>e :Fern . -drawer -width=40 -toggle<CR>
 
 ## 続く
 
-気が向いたら続く
+次回、[fzfとripgrepをvim連携させて優勝する](/ripgrep-and-fzf-with-vim)！
 
 
 [^1]: 厳密に言うと NeoVim は [XDG Base Directory](https://specifications.freedesktop.org/basedir-spec/latest/) に則って各種パスを判別しており、参照されているのは `$XDG_DATA_DIRECTORY/nvim/site/autoload` なのだが、この `$XDG_DATA_DIRECTORY` の初期値 (未設定時のフォールバック値) が `$HOME/.local/share` なのである
