@@ -1,5 +1,5 @@
 ---
-title: "配列処理の計算量を勘違いしてた"
+title: "スライスという存在を誤解してた"
 slug: "i-had-misunderstood-slice"
 date: 2021-04-25T13:27:50+09:00
 description: "ぺろっと参照取ってくるだけだと思ってた"
