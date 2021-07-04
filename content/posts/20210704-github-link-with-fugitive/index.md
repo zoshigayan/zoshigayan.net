@@ -44,10 +44,8 @@ RubyMineを使っている同僚がエディタ上から即座にGitHubの該当
 まずはプラグインを追加する。僕はvim-plugを使っているので以下のような感じになる。
 
 ```vim
-...
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'    " ← 追加
-...
 ```
 
 次にGitHub APIの個人アクセストークンを取得する。GitHubの[New personal access token](https://github.com/settings/tokens/new)ページで「repo」だけにチェックを付ける。tokenはあんまり用途をまたいで利用したくないので、名前 (note) は「fugitive」にしておいた。「Generate token」を押すと完了画面に飛ぶが、このページを離れると二度とtokenは閲覧できなくなるので即座にメモしておく。
