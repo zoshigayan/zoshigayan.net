@@ -45,7 +45,8 @@ tags: []
 
 ## 参照
 
-* [Mail](mailto:hello@zoshigayan.net)
-* [GitHub](https://github.com/zoshigayan)
 * [Twitter](https://twitter.com/zoshigayan)
+* [GitHub](https://github.com/zoshigayan)
+* [Steam](https://steamcommunity.com/id/zoshigayan/)
 * [PSN](https://my.playstation.com/profile/zoshigayan)
+* [Mail](mailto:hello@zoshigayan.net)
