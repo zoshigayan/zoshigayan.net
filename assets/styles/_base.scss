@@ -176,6 +176,11 @@ ul {
     text-decoration: underline;
   }
 
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
   & > ul,
   & > ol {
     margin: 2rem 0 4rem;

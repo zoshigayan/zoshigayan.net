@@ -61,6 +61,18 @@ tags: ["essay"]
 
 > ずっと昔、父親が大事な教訓を教えてくれたんだ。曰く「グウィリン、お前の前にあるのは全世界だ。行って体験して、自分のなりたいものになればいい」…その助言を得て、今ここにいるんだ。大した人生には見えないかもしれないけど、自分は満足だ。それが大切なことだろう？
 
+## おまけ
+
+とにかく街中が餃子で、割とオシャレ空間な駅前の靴下屋にも「餃子」と書かれた提灯が置いてあって笑った。
+
+![](./gyoza.jpeg)
+
+あと、餃子の恐竜である「ぎょうざうるす」が可愛かったので [キーホルダー](https://tochigisakai.stores.jp/items/613bfb32e1fb4c7e536f386e) と [LINEスタンプ](https://store.line.me/stickershop/product/7233950/ja) を買った。
+
+<blockquote class="twitter-tweet" data-lang="ja" data-dnt="true" data-theme="dark"><p lang="ja" dir="ltr">【お知らせ】<br>ギョウザウルスのLINEスタンプができました！<br>みなさまの会話の中で使ってみてください〜<a href="https://t.co/1JIw4qSJ75">https://t.co/1JIw4qSJ75</a><br>よろしくお願い致しますっ <a href="https://t.co/fLXL7yQkkU">pic.twitter.com/fLXL7yQkkU</a></p>&mdash; misato. (@misato08280) <a href="https://twitter.com/misato08280/status/1114822777184251904?ref_src=twsrc%5Etfw">2019年4月7日</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+また行きたいな～
+
 [^1]: PlaystationやSwitchならいざ知らず、PCゲーマーは実家に帰ると大変に無力な存在である。
 [^2]: 今決めた。ぜんぶ近所にあるので。
 [^3]: 詳しく書くと長くなるので省いたけど、別にアドラーは刹那的に生きろと言っているわけではないし、社会規範を反故にして己の欲求だけに従えとも言っていない。気になる人は「嫌われる勇気」とかを読むといいと思う。
