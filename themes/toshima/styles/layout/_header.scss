@@ -1,0 +1,41 @@
+.l-header {
+  width: 100%;
+  border-bottom: solid 1px #000;
+  padding-top: 1rem;
+
+  &__inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1168px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+  }
+
+  &__link-list {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link-item {
+    & > a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    &:not(:first-of-type) {
+      margin-left: 1rem;
+    }
+  }
+}

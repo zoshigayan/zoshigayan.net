@@ -1,0 +1,18 @@
+.l-profile {
+  &__about {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__icon {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &__name {
+    margin-left: 10px;
+  }
+}

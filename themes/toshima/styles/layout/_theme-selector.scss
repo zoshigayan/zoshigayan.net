@@ -1,0 +1,45 @@
+.l-theme-selector {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &__label {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 2rem;
+    line-height: 2rem;
+  }
+
+  &__button-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__button {
+    position: relative;
+    width: 80px;
+    height: 2rem;
+    padding-left: 22px;
+    text-align: left;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      box-sizing: border-box;
+      width: 1rem;
+      height: 1rem;
+      border: solid 1px #000;
+      transform: translateY(-50%);
+    }
+
+    &[aria-pressed="true"]::before {
+      background-color: #000;
+    }
+  }
+}

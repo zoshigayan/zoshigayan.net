@@ -1,0 +1,19 @@
+.l-container {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+
+  &__core {
+    flex: 1;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    max-width: 1168px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  &__main {
+    flex: 1;
+  }
+}

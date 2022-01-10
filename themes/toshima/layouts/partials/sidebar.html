@@ -1,0 +1,24 @@
+<aside class="l-sidebar">
+  <div class="l-profile">
+    <p class="l-profile__title">プロフィール</p>
+    <figure class="l-profile__about">
+      <img class="l-profile__icon" src="{{ .Site.Params.profile.icon }}">
+      <figcaption class="l-profile__name">{{ .Site.Params.profile.name }}</figcaption>
+    </figure>
+    <p class="l-profile__bio">{{ .Site.Params.profile.bio }}</p>
+    <ul class="l-profile__link-list">
+      {{ range .Site.Params.profile.links }}
+        <li><a href="{{ .url }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="l-tags">
+    <p>タグ一覧</p>
+    <ul>
+      {{ range $key, $value := .Site.Taxonomies.tags }}
+      <li>{{ $key }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</aside>
