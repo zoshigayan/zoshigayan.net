@@ -6,13 +6,50 @@ enableRobotsTXT = true
 hasCJKLanguage = true
 languageCode = "ja-JP"
 paginate = 30
-title = "雑司ヶ谷インターネット"
+title = "雑司ヶ谷ブログ"
 copyright = "2020 (C) zoshigayan"
 googleAnalytics = "UA-171113618-1"
+summaryLength = 300
+theme="toshima"
+
+[menu]
+[[menu.header]]
+name="トップ"
+url="/"
+weight=1
+[[menu.header]]
+name="記事一覧"
+url="/posts"
+weight=2
+[[menu.header]]
+name="RSS"
+url="/index.xml"
+weight=3
+
+
 [params]
 description = "インターネットは、あるんだよ"
+  [params.profile]
+    name="zoshigayan"
+    icon="/prof_dark.png"
+    bio="人事労務SaaS開発。プレイングマネージャー。趣味はガンプラです。"
+    [[params.profile.links]]
+      name="email"
+      url="mailto:hello@zoshigayan.net"
+    [[params.profile.links]]
+      name="twitter"
+      url="https://twitter.com/zoshigayan"
+    [[params.profile.links]]
+      name="github"
+      url="https://github.com/zoshigayan"
+    [[params.profile.links]]
+      name="steam"
+      url="https://steamcommunity.com/id/zoshigayan"
+
+
 [permalinks]
 posts = "/:slug"
+
 [markup]
   [markup.highlight]
     codeFences = true

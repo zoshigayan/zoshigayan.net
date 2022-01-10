@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+    {{- partial "head.html" . -}}
+    <body>
+      <div class="l-container">
+        {{- partial "header.html" . -}}
+        <div class="l-container__core">
+          <div class="l-container__main">
+            {{- block "main" . }}{{- end }}
+          </div>
+          <div class="l-container__aside">
+            {{- partial "sidebar.html" . -}}
+          </div>
+        </div>
+        {{- partial "footer.html" . -}}
+      </div>
+    </body>
+    <script type="application/javascript" src="/js/main.js"></script>
+</html>

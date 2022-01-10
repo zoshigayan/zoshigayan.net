@@ -1,0 +1,15 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--c-bg);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, button {
+  color: var(--c-base);
+}
+
+a {
+  color: var(--c-primary);
+}
