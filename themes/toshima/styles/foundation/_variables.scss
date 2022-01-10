@@ -1,3 +1,13 @@
-:root {
-  --unit: 16px;
+body {
+  &.light {
+    --c-bg: #fff;
+    --c-base: #000;
+    --c-primary: #00c;
+  }
+
+  &.dark {
+    --c-bg: #000;
+    --c-base: #fff;
+    --c-primary: #2e8adb;
+  }
 }

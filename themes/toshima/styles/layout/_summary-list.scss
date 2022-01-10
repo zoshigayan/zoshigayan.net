@@ -1,0 +1,10 @@
+.l-summary-list {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    &:not(:first-of-type) {
+      margin-top: 3rem;
+    }
+  }
+}

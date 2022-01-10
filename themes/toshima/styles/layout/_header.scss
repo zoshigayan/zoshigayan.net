@@ -1,6 +1,6 @@
 .l-header {
   width: 100%;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px var(--c-base);
   padding-top: 1rem;
 
   &__inner {
@@ -16,7 +16,7 @@
 
   &__title {
     display: inline-block;
-    color: #000;
+    color: var(--c-base);
     text-decoration: none;
   }
 
@@ -30,8 +30,19 @@
 
   &__link-item {
     & > a {
-      color: #000;
+      position: relative;
+      color: var(--c-base);
       text-decoration: none;
+    }
+
+    & > a[aria-current="page"]::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 10px;
+      background-color: var(--c-base);
     }
 
     &:not(:first-of-type) {

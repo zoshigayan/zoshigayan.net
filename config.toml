@@ -9,7 +9,23 @@ paginate = 30
 title = "雑司ヶ谷ブログ"
 copyright = "2020 (C) zoshigayan"
 googleAnalytics = "UA-171113618-1"
+summaryLength = 300
 theme="toshima"
+
+[menu]
+[[menu.header]]
+name="トップ"
+url="/"
+weight=1
+[[menu.header]]
+name="記事一覧"
+url="/posts"
+weight=2
+[[menu.header]]
+name="RSS"
+url="/index.xml"
+weight=3
+
 
 [params]
 description = "インターネットは、あるんだよ"
