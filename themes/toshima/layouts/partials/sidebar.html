@@ -1,23 +1,14 @@
 <aside class="l-sidebar">
   <div class="l-profile">
-    <p class="l-profile__title">プロフィール</p>
+    <p class="l-profile__title">書いてる人</p>
     <figure class="l-profile__about">
       <img class="l-profile__icon" src="{{ .Site.Params.profile.icon }}">
       <figcaption class="l-profile__name">{{ .Site.Params.profile.name }}</figcaption>
     </figure>
-    <p class="l-profile__bio">{{ .Site.Params.profile.bio }}</p>
+    <p class="l-profile__bio">{{ .Site.Params.profile.name }}</p>
     <ul class="l-profile__link-list">
       {{ range .Site.Params.profile.links }}
         <li><a href="{{ .url }}">{{ .name }}</a></li>
-      {{ end }}
-    </ul>
-  </div>
-
-  <div class="l-tags">
-    <p>カテゴリ</p>
-    <ul>
-      {{ range $key, $value := .Site.Taxonomies.category }}
-      <li><a href="/categories/{{ $key | urlize }}">{{ $key }}</a></li>
       {{ end }}
     </ul>
   </div>

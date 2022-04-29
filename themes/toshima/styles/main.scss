@@ -4,7 +4,8 @@
 @import "layout/_header";
 @import "layout/_footer";
 @import "layout/_sidebar";
-@import "layout/_theme-selector";
 @import "layout/_profile";
 @import "layout/_summary-list";
+/* @import "layout/_syntax"; */
 @import "object/utility/_typography";
+@import "object/components/_postlist.scss";

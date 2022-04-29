@@ -1,13 +1,12 @@
-body {
-  &.light {
+:root {
+  @media (prefers-color-scheme: light) {
     --c-bg: #fff;
     --c-base: #000;
     --c-primary: #00c;
   }
-
-  &.dark {
+  @media (prefers-color-scheme: dark) {
     --c-bg: #000;
-    --c-base: #fff;
+    --c-base: #ccc;
     --c-primary: #2e8adb;
   }
 }

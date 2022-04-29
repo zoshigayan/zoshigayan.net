@@ -1,15 +1,3 @@
 {{ define "main" }}
-  <ul class="l-summary-list">
-  {{ range first 10 .Site.RegularPages }}
-  <li class="l-summary-list__item">
-    <article>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <time datetime="{{ .Date }}">{{ .Date.Format "2006年1月2日" }}</time>
-      <p>
-        {{ .Summary }}
-      </p>
-    </article>
-  </li>
-  {{ end }}
-  </ul>
+<p>後でやる</p>
 {{ end }}

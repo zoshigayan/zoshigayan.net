@@ -1,8 +1,10 @@
 {{ define "main" }}
-<ul>
+<ul class="postlist">
   {{ range .Pages }}
-  <li>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  <li class="postlist__item">
+    <article>
+      <a href="{{ .Permalink }}" class="postlist__link">{{ .Title }}</a>
+    </article>
   </li>
   {{ end }}
 </ul>

@@ -1,0 +1,16 @@
+.postlist {
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  &__item {
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__link {
+    color: var(--c-base);
+  }
+}

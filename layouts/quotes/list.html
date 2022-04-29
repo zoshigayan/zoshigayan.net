@@ -1,0 +1,28 @@
+{{ define "main" }}
+<ul class="quotes">
+  {{ range .Pages }}
+  <li>
+    <article>
+      <a href="{{ .Permalink }}">
+        {{ .Content | plainify }}
+      </a>
+      <span>{{ .Params.by }}</span>
+    </article>
+  </li>
+  {{ end }}
+</ul>
+<style>
+  .quotes {
+    padding: 0;
+    list-style-type: none;
+  }
+  .quotes li {
+    font-size: 2rem;
+  }
+
+  .quotes li a {
+    color: var(--c-base);
+    font-weight: bold;
+  }
+</style>
+{{ end }}

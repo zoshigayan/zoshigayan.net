@@ -18,21 +18,29 @@ name="トップ"
 url="/"
 weight=1
 [[menu.header]]
-name="記事一覧"
-url="/posts"
+name="知見"
+url="/knowledges"
 weight=2
+[[menu.header]]
+name="雑記"
+url="/random"
+weight=3
+[[menu.header]]
+name="引用"
+url="/quotes"
+weight=4
 [[menu.header]]
 name="RSS"
 url="/index.xml"
-weight=3
+weight=5
 
 
 [params]
-description = "インターネットは、あるんだよ"
+description = "ギリギリ生きているWeb系プログラマのブログです"
   [params.profile]
     name="zoshigayan"
     icon="/prof_dark.png"
-    bio="人事労務SaaS開発。プレイングマネージャー。趣味はガンプラです。"
+    bio="Web Application Developer / Project Manager"
     [[params.profile.links]]
       name="email"
       url="mailto:hello@zoshigayan.net"
@@ -48,18 +56,20 @@ description = "インターネットは、あるんだよ"
 
 
 [permalinks]
-posts = "/:slug"
+knowledges = "/knowledges/:slug"
+random = "/random/:slug"
+quotes = "/quotes/:slug"
 
 [markup]
   [markup.highlight]
     codeFences = true
-    guessSyntax = false
+    guessSyntax = true
     hl_Lines = ""
     lineNoStart = 1
     lineNos = false
     lineNumbersInTable = true
     noClasses = true
-    style = "api"
+    style = "swapoff"
     tabWidth = 4
   [markup.tableOfContents]
     endLevel = 3
